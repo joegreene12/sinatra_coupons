@@ -1,0 +1,19 @@
+
+<h3> All of the Students</h3>
+<ol>
+
+
+<% @coupons.each do |coupon| %>
+
+<li>
+   Coupon Title  has a of <%= coupon.title %>
+  <ul>
+    <li>description: <%= coupon.description%></li>
+    <li>discount_amount: <%= coupon.discount_amount%></li>
+    <li>experation_date: <%= coupon.experation_date%></li>
+    
+  </ul>
+</li>
+
+<% end %>
+</ol>
